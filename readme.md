@@ -1,9 +1,11 @@
 # React-Native-Image-Zoom
 
-Forked from https://github.com/ascoders/react-native-image-zoom
+Forked from https://github.com/ascoders/react-native-image-zoom  
 Added new props:
 
 * `onSwipeVertical` - default () => {}  
 * `swipeVerticalDistanceCallback` - default 220
 
-Callback to be called when swiping up or down on distance greater than `swipeVerticalDistanceCallback`.
+`onSwipeVertical` will be called when image is not zoomed and swiping up or down on distance greater than `swipeVerticalDistanceCallback`.  
+
+This is useful when implementing dismiss gesture.
