@@ -13,6 +13,7 @@ export class Props {
    */
   public cropWidth: number = 100
 
+  public swipeVerticalDistanceCallback: number = 220
   /**
    * 操作区域高度
    */
@@ -122,6 +123,12 @@ export class Props {
   public layoutChange?: (event?: object) => void = () => {
     //
   }
+
+  public onSwipeVertical?: () => void = () => {
+    //
+  }
+
+
 }
 
 export class State {

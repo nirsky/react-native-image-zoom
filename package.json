@@ -1,6 +1,6 @@
 {
-  "name": "react-native-image-pan-zoom",
-  "version": "2.0.16",
+  "name": "@npmsoluto/react-native-image-zoom",
+  "version": "3.0.0",
   "description": "react native image pan zoom",
   "main": "built/index.js",
   "types": "src/index.ts",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ascoders/react-native-image-zoom.git"
+    "url": "https://github.com/nirsky/react-native-image-zoom.git"
   },
   "keywords": ["image-zoom"],
   "author": "ascoders",

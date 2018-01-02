@@ -332,10 +332,15 @@ export default class ImageViewer extends React.Component<Props, State> {
               }
             }
 
-            if (this.props.imageHeight * this.scale > this.props.cropHeight) {
+            if (this.props.imageHeight * this.scale > this.props.cropHeight || this.scale === 1) {
               // 如果图片高度大图盒子高度， 可以纵向拖拽
               this.positionY += diffY / this.scale
               this.animatedPositionY.setValue(this.positionY)
+              if (Math.abs(this.positionY) > this.props.swipeVerticalDistanceCallback && this.scale === 1) {
+                if (this.props.onSwipeVertical) {
+                  this.props.onSwipeVertical();
+                }
+              }
             }
           }
         } else {
